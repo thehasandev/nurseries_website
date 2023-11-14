@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Flex() {
+function Flex({className,children}) {
   return (
-    <div>Flex</div>
+    <div className={`flex ${className}`}>{children}</div>
   )
 }
 
