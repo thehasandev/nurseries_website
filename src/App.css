@@ -1,0 +1,28 @@
+.slick-dots ul {
+  color: #292B2C;
+  border: #292B2C;
+}
+
+.slick-dots ul .slick-active{
+  color: #ff324d;
+  border: #ff324d;
+}
+.slick-dots ul .slick-active{
+  color: #ff324d;
+  border: #ff324d;
+  position: relative;
+}
+
+.slick-dots ul .slick-active::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 3px solid #ff324d;
+  bottom: 32.5px;
+  left: 2px;
+  border-radius: 100%;
+}
+
+
+

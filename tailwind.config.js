@@ -31,6 +31,13 @@ export default {
         'primary': '#ff324d',
         'secondary': '#292B2C',
       },
+      backgroundImage: {
+        'bgOne': "url('/src/assets/banner8.png')",
+        'bgTwo': "url('/src/assets/banner2.jpg')",
+        'bgThree': "url('/src/assets/banner3.jpg')",
+        'bgFour': "url('/src/assets/banner4.jpg')",
+ 
+      },
     },
   },
   plugins: [rotateX],
