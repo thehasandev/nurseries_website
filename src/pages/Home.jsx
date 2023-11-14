@@ -6,6 +6,9 @@ import Image from "../components/Image"
 import One from "../assets/two.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
+import {FaAmbulance,FaMoneyBillWave   } from "react-icons/fa"
+import {ImHeadphones   } from "react-icons/im"
+import {MdOutlinePayment    } from "react-icons/md"
 
 
 function Home() {
@@ -28,6 +31,7 @@ function Home() {
       )
   };
   return (
+    <>
     <section>
 
         <Slider {...settings}>
@@ -92,6 +96,54 @@ function Home() {
         </Slider>
    
     </section>
+
+    <section className='my-[120px]'>
+      <Container>
+         <Flex>
+           <Flex className='w-3/12 pl-8 py-4 border border-secondary/40 gap-x-8  items-center'>
+             <div>
+             <FaAmbulance size={25} className='text-primary'/>
+             </div>
+             <div>
+               <h4 className='font-roboto font-medium text-base mb-1 text-secondary'>Free Delivery</h4>
+               <p className='font-pop font-normal text-sm text-secondary'>Worldwide</p>
+             </div>
+           </Flex>
+
+           <Flex className='w-3/12 pl-8 py-4 border border-secondary/40 gap-x-8  items-center'>
+             <div>
+             <FaMoneyBillWave  size={25} className='text-primary'/>
+             </div>
+             <div>
+               <h4 className='font-roboto font-medium text-base mb-1 text-secondary'>Money Returns</h4>
+               <p className='font-pop font-normal text-sm text-secondary'>30 Days money return</p>
+             </div>
+           </Flex>
+        
+           <Flex className='w-3/12 pl-8 py-4 border border-secondary/40 gap-x-8  items-center'>
+             <div>
+             <ImHeadphones  size={25} className='text-primary'/>
+             </div>
+             <div>
+               <h4 className='font-roboto font-medium text-base mb-1 text-secondary'>27/4 Online Support</h4>
+               <p className='font-pop font-normal text-sm text-secondary'>3 Customer Support</p>
+             </div>
+           </Flex>
+
+           <Flex className='w-3/12 pl-8 py-4 border border-secondary/40 gap-x-8  items-center'>
+             <div>
+             <MdOutlinePayment   size={25} className='text-primary'/>
+             </div>
+             <div>
+               <h4 className='font-roboto font-medium text-base mb-1 text-secondary'>Payment Security</h4>
+               <p className='font-pop font-normal text-sm text-secondary'>Safe Payment</p>
+             </div>
+           </Flex>
+        
+         </Flex>
+      </Container>
+    </section>
+    </>
   )
 }
 
