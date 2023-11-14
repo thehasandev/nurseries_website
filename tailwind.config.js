@@ -12,7 +12,11 @@ export default {
       },
       maxWidth: {
         'container': '1320px',
-      }
+      },
+      colors: {
+        'primary': '#ff324d',
+        'secondary': '#292B2C',
+      },
     },
   },
   plugins: [],
