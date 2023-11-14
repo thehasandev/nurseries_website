@@ -5,19 +5,20 @@ import Container from "../components/Container"
 import Flex from "../components/Flex"
 import Image from "../components/Image"
 import One from "../assets/two.png"
-import P1 from "../assets/furniture_img1.jpg"
+import Banner1 from "../assets/banner88.png"
+import Banner2 from "../assets/banner89.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import {FaAmbulance,FaMoneyBillWave,FaPhoneSquareAlt     } from "react-icons/fa"
 import {MdOutlinePayment ,MdStar,MdStarBorder     } from "react-icons/md"
 import {ImHeadphones   } from "react-icons/im"
 import Product from '../components/Product'
-import { Link, useNavigate } from 'react-router-dom'
+
 
 
 
 function Home() {
-  let navigate =useNavigate("/")
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -36,6 +37,16 @@ function Home() {
         </div>
       )
   };
+
+  const productSlide = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows:false,
+  };
+
   return (
     <>
     <section>
@@ -165,14 +176,51 @@ function Home() {
               const {ProductUrl,productName,productPrice,productDiscunt,phoneNumber,productReation} = item
               if(index<8){
                 return <Product url={ProductUrl} name={productName} price={productPrice} discount={productDiscunt} phoneNumber={phoneNumber} reating={productReation }/>
-              }
-              
-                 
+              }   
             })
           }
          </Flex>
       
        
+      </Container>
+    </section>
+
+    <section className='mb-[120px]'>
+       <Container>
+         <Flex>
+           <div className='w-5/12 bg-[#E3FEF9] p-8 relative h-[350px]'>
+             <h2 className='font-roboto font-medium text-secondary text-lg '>Super Sale</h2>
+             <h1 className='font-roboto font-bold text-secondary my-1 text-[32px]'>New Collection</h1>
+             <button className='font-roboto font-medium text-sm text-secondary hover:text-primary'>Shop Now</button>
+             <img src={Banner1} className='absolute  bottom-6 left-10 hover:scale-125 scale-100 duration-500'/>
+           </div>
+           <div className='w-7/12  p-8 relative h-[350px]'>
+             <h2 className='font-roboto font-medium text-secondary text-lg pt-32'>New Season</h2>
+             <h1 className='font-roboto font-bold text-secondary my-1 text-[32px]'>Sale 40% Off</h1>
+             <button className='font-roboto font-medium text-sm text-secondary hover:text-primary'>Shop Now</button>
+             <img src={Banner2} className='absolute  bottom-6 left-16 hover:scale-110 scale-100 duration-500'/>
+           </div>
+         </Flex>
+       </Container>
+    </section>
+
+    <section className='mb-[120px]'>
+      <Container>
+        <div className=' text-center'>
+           <h2 className='font-roboto font-bold text-[32px] mb-[60px] text-secondary relative after:absolute after:bottom-[-10px] after:left-1/2 after:translate-x-[-50%] after:w-16 after:h-[1px] after:bg-primary inline-block '>Trending Items</h2>
+         
+         </div>
+
+         <Slider {...productSlide}>
+         {
+            Data.map((item,index)=>{
+              
+              const {ProductUrl,productName,productPrice,productDiscunt,phoneNumber,productReation} = item
+                return <Product url={ProductUrl} name={productName} price={productPrice} discount={productDiscunt} phoneNumber={phoneNumber} reating={productReation }/> 
+            })
+          }
+         </Slider>
+
       </Container>
     </section>
     </>

@@ -8,7 +8,7 @@ function Navbar() {
     <Container>
         <nav className='flex items-center py-2'>
           <div className='w-2/12'>
-            <h1 className='font-roboto font-semibold text-xl text-secondary'> All Teak Nurseries</h1>
+            <h1 className='font-roboto font-semibold text-xl text-secondary'>Southside Nurseries</h1>
           </div>
           <div className='w-10/12 '>
             <ul className='flex items-center justify-end gap-x-5'>
