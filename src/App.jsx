@@ -1,11 +1,9 @@
 import React from 'react'
-
+import { RouterProvider } from 'react-router-dom'
+import Routes from './routes/Routes'
 function App() {
   return (
-    <div>
-      <h1 className='text-5xl font-pop'>Tailwind setup</h1>
-      <h1 className='text-5xl font-roboto'>Tailwind setup</h1>
-    </div>
+    <RouterProvider router={Routes}/>
   )
 }
 
