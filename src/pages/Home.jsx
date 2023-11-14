@@ -1,17 +1,23 @@
 import React from 'react'
 
+import Data from "../data/productData"
 import Container from "../components/Container"
 import Flex from "../components/Flex"
 import Image from "../components/Image"
 import One from "../assets/two.png"
+import P1 from "../assets/furniture_img1.jpg"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
-import {FaAmbulance,FaMoneyBillWave   } from "react-icons/fa"
+import {FaAmbulance,FaMoneyBillWave,FaPhoneSquareAlt     } from "react-icons/fa"
+import {MdOutlinePayment ,MdStar,MdStarBorder     } from "react-icons/md"
 import {ImHeadphones   } from "react-icons/im"
-import {MdOutlinePayment    } from "react-icons/md"
+import Product from '../components/Product'
+import { Link, useNavigate } from 'react-router-dom'
+
 
 
 function Home() {
+  let navigate =useNavigate("/")
   const settings = {
     dots: true,
     infinite: true,
@@ -35,7 +41,7 @@ function Home() {
     <section>
 
         <Slider {...settings}>
-          <div className=' bg-[#D6F7F2] h-[550px] w-full py-[100px]'>
+          <div className=' bg-[#D6F7F2] h-[580px] w-full py-[100px]'>
             <Container>
               <Flex className="justify-between pt-5">
                 <div className='w-4/12'>
@@ -49,7 +55,8 @@ function Home() {
               </Flex>
             </Container>
           </div>
-          <div className=' bg-[#D6F7F2] h-[550px] w-full py-[100px]'>
+
+          <div className=' bg-[#D6F7F2] h-[580px] w-full py-[100px]'>
             <Container>
               <Flex className="justify-between pt-5">
                 <div className='w-4/12'>
@@ -63,7 +70,8 @@ function Home() {
               </Flex>
             </Container>
           </div>
-          <div className=' bg-[#D6F7F2] h-[550px] w-full py-[100px]'>
+
+          <div className=' bg-[#D6F7F2] h-[580px] w-full py-[100px]'>
             <Container>
               <Flex className="justify-between pt-5">
                 <div className='w-4/12'>
@@ -77,7 +85,8 @@ function Home() {
               </Flex>
             </Container>
           </div>
-          <div className=' bg-[#D6F7F2] h-[550px] w-full py-[100px]'>
+
+          <div className=' bg-[#D6F7F2] h-[580px] w-full py-[100px]'>
             <Container>
               <Flex className="justify-between pt-5">
                 <div className='w-4/12'>
@@ -141,6 +150,29 @@ function Home() {
            </Flex>
         
          </Flex>
+      </Container>
+    </section>
+
+    <section className='mb-[120px]'>
+      <Container>
+         <div className=' text-center'>
+           <h2 className='font-roboto font-bold text-[32px] mb-[60px] text-secondary relative after:absolute after:bottom-[-10px] after:left-1/2 after:translate-x-[-50%] after:w-16 after:h-[1px] after:bg-primary inline-block '>Exclusive Products</h2>
+         </div>
+         <Flex className=" flex-wrap justify-between gap-y-8">
+          {
+            Data.map((item,index)=>{
+              
+              const {ProductUrl,productName,productPrice,productDiscunt,phoneNumber,productReation} = item
+              if(index<8){
+                return <Product url={ProductUrl} name={productName} price={productPrice} discount={productDiscunt} phoneNumber={phoneNumber} reating={productReation }/>
+              }
+              
+                 
+            })
+          }
+         </Flex>
+      
+       
       </Container>
     </section>
     </>
