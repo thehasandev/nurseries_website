@@ -5,6 +5,8 @@ import RouteLayouts from '../components/RouteLayouts';
 import ProductDeteails from '../pages/ProductDeteails';
 import Error from '../pages/Error';
 import Blog from '../pages/Blog';
+import Loging from '../pages/Loging';
+import SingUp from '../pages/SingUp';
 
 const Routes = createBrowserRouter([
     {
@@ -23,6 +25,16 @@ const Routes = createBrowserRouter([
           path: "/blog",
           element: <Blog />,
         },
+        {
+          path: "/log-in",
+          element: <Loging />,
+        },
+        
+        {
+          path: "/sing-up",
+          element: <SingUp />,
+        },
+        
         {
           path: "/*",
           element: <Error/>,
