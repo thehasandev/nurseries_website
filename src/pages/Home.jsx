@@ -154,7 +154,7 @@ function Home() {
    
     </section>
 
-    <section className='my-[120px]'>
+    <section className='my-[60px] md:my-[120px]'>
       <Container>
          <Flex className="flex-wrap justify-center gap-y-5">
            <Flex className='md:w-3/12 pl-8 pr-8 md:pr-0 py-4 border border-secondary/40 gap-x-8  items-center'>
@@ -201,7 +201,7 @@ function Home() {
       </Container>
     </section>
 
-    <section className='mb-[120px]'>
+    <section className='mb-[60px] md:mb-[120px]'>
       <Container>
          <div className=' text-center'>
            <h2 className='font-roboto font-bold text-[32px] mb-[60px] text-secondary relative after:absolute after:bottom-[-10px] after:left-1/2 after:translate-x-[-50%] after:w-16 after:h-[1px] after:bg-primary inline-block '>Exclusive Products</h2>
@@ -247,7 +247,7 @@ return <div key={index} className={`w-[310px] border border-solid border-seconda
       </Container>
     </section>
 
-    <section className='mb-[120px]'>
+    <section className='mb-[60px] md:mb-[120px]'>
        <Container>
          <Flex className="flex-wrap justify-center">
            <div className='md:w-5/12 bg-[#E3FEF9] p-8 relative h-[350px]'>
@@ -266,7 +266,7 @@ return <div key={index} className={`w-[310px] border border-solid border-seconda
        </Container>
     </section>
 
-    <section className='mb-[120px]'>
+    <section className='mb[60px] md:mb-[120px]'>
     <Slider {...gellarySlide}>
       <div className='relative w-[220px]'>
        <Image className="w-full h-[250px]"  src={GallaryOne}/>
