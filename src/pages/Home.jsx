@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick.css";
 import {FaAmbulance,FaMoneyBillWave,FaPhoneSquareAlt     } from "react-icons/fa"
 import {MdOutlinePayment ,MdStar,MdStarBorder     } from "react-icons/md"
 import {ImHeadphones   } from "react-icons/im"
-import Product from '../components/Product'
+
 
 
 
@@ -38,14 +38,7 @@ function Home() {
       )
   };
 
-  const productSlide = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows:false,
-  };
+
 
   return (
     <>
@@ -170,15 +163,47 @@ function Home() {
            <h2 className='font-roboto font-bold text-[32px] mb-[60px] text-secondary relative after:absolute after:bottom-[-10px] after:left-1/2 after:translate-x-[-50%] after:w-16 after:h-[1px] after:bg-primary inline-block '>Exclusive Products</h2>
          </div>
          <Flex className=" flex-wrap justify-between gap-y-8">
-          {
-            Data.map((item,index)=>{
+        
               
-              const {ProductUrl,productName,productPrice,productDiscunt,phoneNumber,productReation} = item
-              if(index<8){
-                return <Product url={ProductUrl} name={productName} price={productPrice} discount={productDiscunt} phoneNumber={phoneNumber} reating={productReation }/>
-              }   
-            })
-          }
+    {
+      Data.map((item,index)=>{
+        let {ProductUrl,productName,productPrice,productDiscunt,phoneNumber,productReation} = item
+        if(index<8){
+return <div key={index} className={`w-[310px] border border-solid border-secondary/40 rounded-[10px] relative overflow-hidden group`}>
+              <div className='relative overflow-hidden group '>
+              <Image className="w-full rounded-t-[10px] " src={ProductUrl}/>
+              <div className='absolute flex items-center justify-center w-full h-full rounded-t-[10px] group-hover:top-0 duration-200 bg-black/20 top-[100%] left-0'>
+                  <p className='font-pop text-center font-medium text-xl text-black flex items-center gap-x-2'><FaPhoneSquareAlt  />{phoneNumber}</p>
+              </div>
+              </div>
+              <button className='font-pop absolute hover:bg-white border border-solid border-primary hover:text-secondary  duration-300 -bottom-16 group-hover:bottom-4 left-1/2 -translate-x-1/2 font-normal bg-primary text-base  text-white px-10  py-4 rounded-full'>Call Now</button>
+
+              <div>
+                  <h3 className='font-roboto text-center font-medium mt-4 mb-2 text-base text-secondary'>{productName}</h3>
+                  <p className='font-pop text-center font-medium text-sm text-primary'><span className='text-secondary line-through mr-2'>{productDiscunt}</span>{productPrice}</p>
+                  
+                  <Flex className='text-orange-500 justify-center mt-2 items-center pb-6'>
+                  <MdStar />
+                  <MdStar />
+                  <MdStar />
+                  <MdStar />
+                  <MdStarBorder />
+                  <p className='font-pop font-normal text-sm text-secondary pl-2'>{productReation}</p>
+                  </Flex>
+              
+              </div>
+                      
+       </div>
+
+        }
+
+      })
+    }          
+              
+         
+
+
+
          </Flex>
       
        
@@ -204,25 +229,7 @@ function Home() {
        </Container>
     </section>
 
-    <section className='mb-[120px]'>
-      <Container>
-        <div className=' text-center'>
-           <h2 className='font-roboto font-bold text-[32px] mb-[60px] text-secondary relative after:absolute after:bottom-[-10px] after:left-1/2 after:translate-x-[-50%] after:w-16 after:h-[1px] after:bg-primary inline-block '>Trending Items</h2>
-         
-         </div>
 
-         <Slider {...productSlide}>
-         {
-            Data.map((item,index)=>{
-              
-              const {ProductUrl,productName,productPrice,productDiscunt,phoneNumber,productReation} = item
-                return <Product url={ProductUrl} name={productName} price={productPrice} discount={productDiscunt} phoneNumber={phoneNumber} reating={productReation }/> 
-            })
-          }
-         </Slider>
-
-      </Container>
-    </section>
     </>
   )
 }
