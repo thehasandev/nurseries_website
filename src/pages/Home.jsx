@@ -47,11 +47,14 @@ function Home() {
       )
   };
   const gellarySlide = {
+    autoplay: true,
     infinite: true,
-    speed: 2000,
+    autoplaySpeed: 1500,
+    speed: 1500,
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows:false,
+    cssEase: "linear"
   };
 
 
