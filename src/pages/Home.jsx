@@ -18,16 +18,12 @@ import GallaryThree from "../assets/g3.jpg"
 import GallaryFour from "../assets/g4.jpg"
 import GallaryFive from "../assets/g5.jpg"
 import GallarySix from "../assets/g6.jpg"
-
-
-
-
+import { Link } from 'react-router-dom'
 
 
 function Home() {
   
   const settings = {
-    autoplay: true,
     dots: true,
     infinite: true,
     speed: 1000,
@@ -222,7 +218,9 @@ return <div key={index} className={`w-[310px] border border-solid border-seconda
               <button className='font-pop absolute hover:bg-white border border-solid border-primary hover:text-secondary  duration-300 -bottom-16 group-hover:bottom-4 left-1/2 -translate-x-1/2 font-normal bg-primary text-base  text-white px-10  py-4 rounded-full'>Call Now</button>
 
               <div>
+                <Link to="/product-details" state={{ProductUrl,productName,productPrice,productDiscunt,phoneNumber}}>
                   <h3 className='font-roboto text-center font-medium mt-4 mb-2 text-base text-secondary'>{productName}</h3>
+                </Link>
                   <p className='font-pop text-center font-medium text-sm text-primary'><span className='text-secondary line-through mr-2'>{productDiscunt}</span>{productPrice}</p>
                   
                   <Flex className='text-orange-500 justify-center mt-2 items-center pb-6'>

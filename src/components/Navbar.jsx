@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Flex from "../components/Flex" 
 import Container from '../components/Container'
 import {RiArrowDropDownLine,RiMenu3Line } from "react-icons/ri"
+import { Link } from 'react-router-dom'
 function Navbar() {
 
   let [menu,setMenu] = useState(false)
@@ -34,7 +35,9 @@ function Navbar() {
               </div>
               <div className='w-10/12 '>
                 <ul  className='flex items-center justify-end gap-x-5'>
-                  <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Home</li>
+                  <Link to="/">
+                    <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Home</li>
+                  </Link>
                   <li className='font-pop font-normal text-sm text-secondary group hover:text-primary duration-500 cursor-pointer flex items-center relative '>Our Products<RiArrowDropDownLine size={25}/>
                   {/* Hover Drop Menu  */}
                   <div className='bg-white shadow-xl w-44 pl-5 py-4  absolute top-9 -left-14 z-10 hover:text-secondary rotate-x-90 group-hover:rotate-x-0 group-hover:text-secondary duration-300 origin-top'>
@@ -70,7 +73,9 @@ function Navbar() {
           {
             menu &&
           <ul className='pl-4'>
-            <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Home</li>
+             <Link to="/">
+                <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Home</li>
+             </Link>
             <li onClick={()=>{setDrop(!drop)}}  className='font-pop font-normal mb-2 text-sm text-secondary group hover:text-primary duration-500 cursor-pointer flex items-center relative '>Our Products<RiArrowDropDownLine  size={25}/></li>
            {/* Drop Dorn Menu  */}
               {
