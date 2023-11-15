@@ -9,9 +9,16 @@ import Banner1 from "../assets/banner88.png"
 import Banner2 from "../assets/banner89.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
-import {FaAmbulance,FaMoneyBillWave,FaPhoneSquareAlt     } from "react-icons/fa"
-import {MdOutlinePayment ,MdStar,MdStarBorder     } from "react-icons/md"
-import {ImHeadphones   } from "react-icons/im"
+import {FaAmbulance,FaMoneyBillWave,FaPhoneSquareAlt} from "react-icons/fa"
+import {MdOutlinePayment ,MdStar,MdStarBorder} from "react-icons/md"
+import {ImHeadphones} from "react-icons/im"
+import GallaryOne from "../assets/g1.jpg"
+import GallaryTwo from "../assets/g2.jpg"
+import GallaryThree from "../assets/g3.jpg"
+import GallaryFour from "../assets/g4.jpg"
+import GallaryFive from "../assets/g5.jpg"
+import GallarySix from "../assets/g6.jpg"
+
 
 
 
@@ -20,9 +27,11 @@ import {ImHeadphones   } from "react-icons/im"
 function Home() {
   
   const settings = {
+    autoplay: true,
     dots: true,
     infinite: true,
-    speed: 2000,
+    speed: 2500,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows:false,
@@ -36,6 +45,13 @@ function Home() {
           .
         </div>
       )
+  };
+  const gellarySlide = {
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows:false,
   };
 
 
@@ -163,8 +179,7 @@ function Home() {
            <h2 className='font-roboto font-bold text-[32px] mb-[60px] text-secondary relative after:absolute after:bottom-[-10px] after:left-1/2 after:translate-x-[-50%] after:w-16 after:h-[1px] after:bg-primary inline-block '>Exclusive Products</h2>
          </div>
          <Flex className=" flex-wrap justify-between gap-y-8">
-        
-              
+            
     {
       Data.map((item,index)=>{
         let {ProductUrl,productName,productPrice,productDiscunt,phoneNumber,productReation} = item
@@ -199,11 +214,6 @@ return <div key={index} className={`w-[310px] border border-solid border-seconda
 
       })
     }          
-              
-         
-
-
-
          </Flex>
       
        
@@ -227,6 +237,46 @@ return <div key={index} className={`w-[310px] border border-solid border-seconda
            </div>
          </Flex>
        </Container>
+    </section>
+
+    <section className='mb-[120px]'>
+    <Slider {...gellarySlide}>
+      <div className='relative w-[220px]'>
+       <Image className="w-full h-[250px]"  src={GallaryOne}/>
+       <div className='bg-black/20 h-full w-full top-0 left-0 absolute'></div>
+      </div>
+
+      <div className='relative w-[220px]'>
+       <Image  className="w-full h-[250px]" src={GallaryTwo}/>
+       <div className='bg-black/20 h-full w-full top-0 left-0 absolute'></div>
+      </div>
+
+      <div className='relative w-[220px]'>
+       <Image className="w-full h-[250px]"  src={GallaryThree}/>
+       <div className='bg-black/20 h-full w-full top-0 left-0 absolute'></div>
+      </div>
+
+      <div className='relative w-[220px]'>
+       <Image  className="w-full h-[250px]" src={GallaryFour}/>
+       <div className='bg-black/20 h-full w-full top-0 left-0 absolute'></div>
+      </div>
+
+      <div className='relative w-[220px]'>
+       <Image className="w-full h-[250px]"  src={GallaryFive}/>
+       <div className='bg-black/20 h-full w-full top-0 left-0 absolute'></div>
+      </div>
+
+      <div className='relative w-[220px]'>
+       <Image className="w-full h-[250px]"  src={GallarySix}/>
+       <div className='bg-black/20 h-full w-full top-0 left-0 absolute'></div>
+      </div>
+
+      <div className='relative w-[220px]'>
+       <Image  className="w-full h-[250px]" src={GallaryOne}/>
+       <div className='bg-black/20 h-full w-full top-0 left-0 absolute'></div>
+      </div>
+
+    </Slider>
     </section>
 
 
