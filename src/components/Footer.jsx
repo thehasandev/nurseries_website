@@ -9,8 +9,8 @@ function Footer() {
     <>
     <footer className='bg-secondary py-[100px] text-white'>
       <Container>
-        <Flex className=" gap-x-16">
-            <div className='w-[280px]'>
+        <Flex className=" md:gap-x-16 justify-between flex-wrap px-2 xl:px-0 gap-y-10">
+            <div className='md:w-[280px]'>
               <h3 className='font-roboto font-bold text-3xl '>Southside Nurseries</h3>
               <p className='font-pop font-normal text-base my-5'>If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
               <Flex className="gap-x-4">
@@ -22,7 +22,7 @@ function Footer() {
               </Flex>
             </div>
 
-            <div className='w-[200px]'>
+            <div className='md:w-[200px]'>
              <h3 className='font-roboto font-semibold text-[18px] mb-5 mt-1'>Useful Links</h3>
               <ul>
                 <li className='font-pop font-normal mb-2 text-sm hover:text-primary duration-300 cursor-pointer'>About Us</li>
@@ -33,7 +33,7 @@ function Footer() {
               </ul>
             </div>
             
-            <div className='w-[200px]'>
+            <div className='md:w-[200px]'>
              <h3 className='font-roboto font-semibold text-[18px] mb-5 mt-1'>Category</h3>
               <ul>
                 <li className='font-pop font-normal mb-2 text-sm hover:text-primary duration-300 cursor-pointer'>Bedroom</li>
@@ -44,7 +44,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className='w-[200px]'>
+            <div className='md:w-[200px]'>
              <h3 className='font-roboto font-semibold text-[18px] mb-5 mt-1'>My Account</h3>
               <ul>
                 <li className='font-pop font-normal mb-2 text-sm hover:text-primary duration-300 cursor-pointer'>My Account</li>
@@ -55,10 +55,10 @@ function Footer() {
               </ul>
             </div>
 
-            <div className='w-[200px]'>
+            <div className='md:w-[200px]'>
              <h3 className='font-roboto font-semibold text-[18px] mb-5 mt-1'>Contact Info</h3>
               <ul>
-                <li className='font-pop font-normal mb-3 text-sm  flex items-center gap-x-4'><MdLocationOn   size={40}/> 123 Street, Old Trafford, New South London , UK</li>
+                <li className='font-pop font-normal mb-3 text-sm  flex items-center gap-x-4'><MdLocationOn   size={20}/> 123 Street, Old Trafford, New South London , UK</li>
                 <li className='font-pop font-normal mb-3 text-sm flex items-center gap-x-4 '><MdMail  size={20}/> info@shopwise.com</li>
                 <li className='font-pop font-normal mb-3 text-sm  flex items-center gap-x-4'><MdOutlinePhoneIphone  size={20}/> + 457 789 789 65</li>
               </ul>
@@ -67,7 +67,7 @@ function Footer() {
         </Flex>
       </Container>
     </footer>
-    <section className='pb-8 bg-secondary text-white border-t pt-5 border-solid border-white/20'>
+    <section className='pb-8 bg-secondary text-white border-t pt-5 border-solid border-white/20 px-2 xl:px-0'>
       <Container>
         <div >
           <p className='font-pop font-normal text-sm'>Copyright 2022.KlbTheme . All rights reserved</p>
