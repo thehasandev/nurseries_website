@@ -46,6 +46,7 @@ function Home() {
         </div>
       )
   };
+
   const gellarySlide = {
     autoplay: true,
     infinite: true,
@@ -281,8 +282,6 @@ return <div key={index} className={`w-[310px] border border-solid border-seconda
 
     </Slider>
     </section>
-
-
     </>
   )
 }
