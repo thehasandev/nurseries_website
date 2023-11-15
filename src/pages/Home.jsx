@@ -179,7 +179,7 @@ function Home() {
          <div className=' text-center'>
            <h2 className='font-roboto font-bold text-[32px] mb-[60px] text-secondary relative after:absolute after:bottom-[-10px] after:left-1/2 after:translate-x-[-50%] after:w-16 after:h-[1px] after:bg-primary inline-block '>Exclusive Products</h2>
          </div>
-         <Flex className=" flex-wrap justify-between gap-y-8">
+         <Flex className=" flex-wrap justify-center gap-x-2 md:gap-x-0 md:justify-between gap-y-8">
             
     {
       Data.map((item,index)=>{
