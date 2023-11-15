@@ -129,8 +129,8 @@ function Home() {
 
     <section className='my-[120px]'>
       <Container>
-         <Flex>
-           <Flex className='w-3/12 pl-8 py-4 border border-secondary/40 gap-x-8  items-center'>
+         <Flex className="flex-wrap justify-center gap-y-5">
+           <Flex className='md:w-3/12 pl-8 pr-8 md:pr-0 py-4 border border-secondary/40 gap-x-8  items-center'>
              <div>
              <FaAmbulance size={25} className='text-primary'/>
              </div>
@@ -140,7 +140,7 @@ function Home() {
              </div>
            </Flex>
 
-           <Flex className='w-3/12 pl-8 py-4 border border-secondary/40 gap-x-8  items-center'>
+           <Flex className='md:w-3/12 pl-8 pr-8 md:pr-0 py-4 border border-secondary/40 gap-x-8  items-center'>
              <div>
              <FaMoneyBillWave  size={25} className='text-primary'/>
              </div>
@@ -150,7 +150,7 @@ function Home() {
              </div>
            </Flex>
         
-           <Flex className='w-3/12 pl-8 py-4 border border-secondary/40 gap-x-8  items-center'>
+           <Flex className='md:w-3/12 pl-8 pr-8 md:pr-0 py-4 border border-secondary/40 gap-x-8  items-center'>
              <div>
              <ImHeadphones  size={25} className='text-primary'/>
              </div>
@@ -160,7 +160,7 @@ function Home() {
              </div>
            </Flex>
 
-           <Flex className='w-3/12 pl-8 py-4 border border-secondary/40 gap-x-8  items-center'>
+           <Flex className='md:w-3/12 pl-8 pr-8 md:pr-0 py-4 border border-secondary/40 gap-x-8  items-center'>
              <div>
              <MdOutlinePayment   size={25} className='text-primary'/>
              </div>
