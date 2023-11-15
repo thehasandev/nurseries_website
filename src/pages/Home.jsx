@@ -27,7 +27,7 @@ import GallarySix from "../assets/g6.jpg"
 function Home() {
   
   const settings = {
-    // autoplay: true,
+    autoplay: true,
     dots: true,
     infinite: true,
     speed: 1000,
@@ -35,6 +35,7 @@ function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows:false,
+    cssEase: "linear",
     appendDots: dots => (
         <div>
           <ul className='flex gap-x-4 absolute bottom-[0] md:bottom-6 left-1/2 -translate-x-1/2'> {dots} </ul>
@@ -55,7 +56,33 @@ function Home() {
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows:false,
-    cssEase: "linear"
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+         
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
 
@@ -210,7 +237,6 @@ return <div key={index} className={`w-[310px] border border-solid border-seconda
               </div>
                       
        </div>
-
         }
 
       })
@@ -223,18 +249,18 @@ return <div key={index} className={`w-[310px] border border-solid border-seconda
 
     <section className='mb-[120px]'>
        <Container>
-         <Flex>
-           <div className='w-5/12 bg-[#E3FEF9] p-8 relative h-[350px]'>
+         <Flex className="flex-wrap justify-center">
+           <div className='md:w-5/12 bg-[#E3FEF9] p-8 relative h-[350px]'>
              <h2 className='font-roboto font-medium text-secondary text-lg '>Super Sale</h2>
              <h1 className='font-roboto font-bold text-secondary my-1 text-[32px]'>New Collection</h1>
              <button className='font-roboto font-medium text-sm text-secondary hover:text-primary'>Shop Now</button>
-             <img src={Banner1} className='absolute  bottom-6 left-10 hover:scale-125 scale-100 duration-500'/>
+             <img src={Banner1} className='absolute  bottom-6 left-0 md:left-10 hover:scale-125 scale-100 duration-500'/>
            </div>
-           <div className='w-7/12  p-8 relative h-[350px]'>
+           <div className='md:w-7/12  p-8 relative h-[350px]'>
              <h2 className='font-roboto font-medium text-secondary text-lg pt-32'>New Season</h2>
              <h1 className='font-roboto font-bold text-secondary my-1 text-[32px]'>Sale 40% Off</h1>
              <button className='font-roboto font-medium text-sm text-secondary hover:text-primary'>Shop Now</button>
-             <img src={Banner2} className='absolute  bottom-6 left-16 hover:scale-110 scale-100 duration-500'/>
+             <img src={Banner2} className='absolute -bottom-8  md:bottom-6 md:left-16 hover:scale-110 scale-100 duration-500'/>
            </div>
          </Flex>
        </Container>
