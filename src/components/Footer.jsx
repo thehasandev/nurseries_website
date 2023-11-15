@@ -9,7 +9,7 @@ function Footer() {
     <>
     <footer className='bg-secondary py-[50px] md:py-[100px] text-white'>
       <Container>
-        <Flex className=" md:gap-x-16 justify-between flex-wrap px-2 xl:px-0 gap-y-10">
+        <Flex className=" justify-between  flex-wrap px-2 xl:px-0 gap-y-10">
             <div className='md:w-[280px]'>
               <h3 className='font-roboto font-bold text-2xl md:text-3xl '>Southside Nurseries</h3>
               <p className='font-pop font-normal text-sm md:text-base my-5'>If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
