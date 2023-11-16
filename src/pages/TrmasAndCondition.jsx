@@ -95,7 +95,7 @@ function TrmasAndCondition() {
    
     </section>
 
-    <section className='my-[80px]'>
+    <section className='my-[80px] px-5 xl:px-0'>
         <Container>
             <h2 className='font-roboto font-normal text-3xl mb-2 text-secondary'>Terms & Conditions</h2>
             <p className='font-pop font-normal text-sm mb-4 text-secondary'>These trading terms and conditions apply to purchases of any products or goods from All Teak Nurseries Limited.</p>

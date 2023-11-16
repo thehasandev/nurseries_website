@@ -56,7 +56,9 @@ function Navbar() {
                   <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Furniture Gallery</li>
                   <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Tree Gallery</li>
                   <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Care & Maintenance</li>
-                  <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>About Us</li>
+                  <Link to="/about">
+                    <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>About Us</li>
+                  </Link>
                   <Link to="/trams-condition">
                     <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Terms & Conditions</li>
                   </Link>
@@ -98,7 +100,9 @@ function Navbar() {
             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Furniture Gallery</li>
             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Tree Gallery</li>
             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Care & Maintenance</li>
-            <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>About Us</li>
+            <Link to="/about">
+              <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>About Us</li>
+            </Link>
             <Link to="/trams-condition">
               <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Terms & Conditions</li>
             </Link>
