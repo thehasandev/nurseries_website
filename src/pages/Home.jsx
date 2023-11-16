@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Data from "../data/productData"
 import Container from "../components/Container"
@@ -21,7 +21,18 @@ import GallarySix from "../assets/g6.jpg"
 import { Link } from 'react-router-dom'
 
 
+
 function Home() {
+let [open,setOpen]=useState(null)
+
+  let handleCall =(name,id)=>{
+  Data.map((item,index)=>{
+  if(item.productName == name.productName){
+    setOpen(index)
+  }
+  })
+}
+
   
   const settings = {
     dots: true,
@@ -86,6 +97,7 @@ function Home() {
   return (
     <>
     <section className=''>
+    
         <Slider {...settings}>
           <div className=' bg-[#D6F7F2] h-[300px] md:h-[580px] w-full py-[40px] md:py-[100px] px-2 xl:px-0'>
             <Container>
@@ -210,12 +222,18 @@ function Home() {
         if(index<8){
 return <div key={index} className={`w-[310px] border border-solid border-secondary/40 rounded-[10px] relative overflow-hidden group`}>
               <div className='relative overflow-hidden group '>
-              <Image className="w-full rounded-t-[10px] " src={ProductUrl}/>
-              <div className='absolute flex items-center justify-center w-full h-full rounded-t-[10px] group-hover:top-0 duration-200 bg-black/20 top-[100%] left-0'>
-                  <p className='font-pop text-center font-medium text-xl text-black flex items-center gap-x-2'><FaPhoneSquareAlt  />{phoneNumber}</p>
+                <Link to="/product-details" state={{ProductUrl,productName,productPrice,productDiscunt,phoneNumber}}>
+                  <Image className="w-full rounded-t-[10px] " src={ProductUrl}/>{
+                    index == open &&
+                  <div className={` absolute flex items-center justify-center w-full h-full rounded-t-[10px]  duration-500 bg-black/20  left-0  top-0`}>
+                      <p className='font-pop text-center font-medium text-xl text-black flex items-center gap-x-2'><FaPhoneSquareAlt  />{phoneNumber}</p>
+                  </div>
+                  }
+                </Link>
+         
               </div>
-              </div>
-              <button className='font-pop absolute hover:bg-white border border-solid border-primary hover:text-secondary  duration-300 -bottom-16 group-hover:bottom-4 left-1/2 -translate-x-1/2 font-normal bg-primary text-base  text-white px-10  py-4 rounded-full'>Call Now</button>
+
+              <button onClick={()=>{handleCall(item,index)}} className='font-pop absolute hover:bg-white border border-solid border-primary hover:text-secondary  duration-300 -bottom-16 group-hover:bottom-4 left-1/2 -translate-x-1/2 font-normal bg-primary text-base  text-white px-10  py-4 rounded-full'>Call Now</button>
 
               <div>
                 <Link to="/product-details" state={{ProductUrl,productName,productPrice,productDiscunt,phoneNumber}}>
@@ -246,6 +264,7 @@ return <div key={index} className={`w-[310px] border border-solid border-seconda
     </section>
 
     <section className='mb-[60px] md:mb-[120px]'>
+    
        <Container>
          <Flex className="flex-wrap justify-center">
            <div className='md:w-5/12 bg-[#E3FEF9] p-8 relative h-[350px]'>

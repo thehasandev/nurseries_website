@@ -47,7 +47,7 @@ let data = [
     {
     ProductUrl : "./images/furniture_img6.jpg",
     alt :"furniture_img1.jpg",
-    productName: "Internet Tend To Repeat",
+    productName: "Internet Tend  Repeat",
     productPrice: "65.50",
     productDiscunt: "77.50",
     productReation: "(1)",
@@ -101,7 +101,7 @@ let data = [
     {
     ProductUrl : "./images/furniture_img12.jpg",
     alt :"Adipisci Officia Libero",
-    productName: "Internet Tend A Repeat ",
+    productName: "Internet Tend  Repeat ",
     productPrice: "60.50",
     productDiscunt: "88.50",
     productReation: "(1)",
