@@ -7,6 +7,7 @@ import Error from '../pages/Error';
 import Blog from '../pages/Blog';
 import Loging from '../pages/Loging';
 import SingUp from '../pages/SingUp';
+import TrmasAndCondition from '../pages/TrmasAndCondition';
 
 const Routes = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const Routes = createBrowserRouter([
         {
           path: "/blog",
           element: <Blog />,
+        },
+        {
+          path: "/trams-condition",
+          element: <TrmasAndCondition />,
         },
         {
           path: "/log-in",
