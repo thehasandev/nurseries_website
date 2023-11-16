@@ -136,6 +136,18 @@ function GallaryForFurniture() {
         <div className='md:w-[24%]'>
           <Image src={Furniture2} className="rounded-[5px]"/>
         </div>
+        <div className='md:w-[24%]'>
+          <Image src={Furniture1} className="rounded-[5px]"/>
+        </div>
+        <div className='md:w-[24%]'>
+          <Image src={Furniture2} className="rounded-[5px]"/>
+        </div>
+        <div className='md:w-[24%]'>
+          <Image src={Furniture1} className="rounded-[5px]"/>
+        </div>
+        <div className='md:w-[24%]'>
+          <Image src={Furniture2} className="rounded-[5px]"/>
+        </div>
       </Flex>
       </Container>
      </section>
