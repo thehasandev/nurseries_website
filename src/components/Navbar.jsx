@@ -91,44 +91,44 @@ function Navbar() {
             menu &&
           <ul className='pl-4'>
              <Link to="/">
-                <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Home</li>
+                <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Home</li>
              </Link>
-            <li onClick={()=>{setDrop(!drop)}}  className='font-pop font-normal mb-2 text-sm text-secondary group hover:text-primary duration-500 cursor-pointer flex items-center relative '>Our Products<RiArrowDropDownLine  size={25}/></li>
+            <li  onClick={()=>{setDrop(!drop)}}  className='font-pop font-normal mb-2 text-sm text-secondary group hover:text-primary duration-500 cursor-pointer flex items-center relative '>Our Products<RiArrowDropDownLine  size={25}/></li>
            {/* Drop Dorn Menu  */}
               {
                 drop &&
                 <ul >
-                  <li className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Sets</li>
-                  <li className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Tables</li>
-                  <li className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Chairs</li>
-                  <li className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Benches</li>
-                  <li className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Loungers</li>
-                  <li className='font-pop font-normal  text-sm text-secondary group hover:text-primary duration-300'>Teak Accessories</li>
+                  <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Sets</li>
+                  <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Tables</li>
+                  <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Chairs</li>
+                  <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Benches</li>
+                  <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary/60 cursor-pointer group hover:text-primary duration-300'>Teak Loungers</li>
+                  <li onClick={()=>{setMenu(false)}} className='font-pop font-normal  text-sm text-secondary group hover:text-primary duration-300'>Teak Accessories</li>
                 </ul>
               }
            <Link to="/furniture-gallary">
-            <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Furniture Gallery</li>
+            <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Furniture Gallery</li>
            </Link>   
 
            <Link to="/tree-gallary">
-             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Tree Gallery</li>
+             <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Tree Gallery</li>
            </Link>
-            <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Care & Maintenance</li>
+            <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Care & Maintenance</li>
             
             <Link to="/about">
-              <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>About Us</li>
+              <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>About Us</li>
             </Link>
 
             <Link to="/trams-condition">
-              <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Terms & Conditions</li>
+              <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Terms & Conditions</li>
             </Link>
 
             <Link to="/contact">
-              <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Contact Us</li>
+              <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Contact Us</li>
             </Link>
            
             <Link to="/blog">
-              <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Blog</li>
+              <li onClick={()=>{setMenu(false)}} className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Blog</li>
             </Link>
           </ul>
           }
