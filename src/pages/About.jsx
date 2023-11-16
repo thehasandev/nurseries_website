@@ -102,7 +102,7 @@ function TrmasAndCondition() {
     <section className='mt-[80px] px-5 xl:px-0'>
       <Container>
         <h2 className='font-roboto font-normal text-3xl mb-4 text-secondary'>All Teak Nurseries Limited – Supplier of Quality Teak Garden Furniture</h2>
-      <Flex className="items-center gap-y-5 flex-wrap justify-between">
+      <Flex className="items-center justify-center gap-y-5 flex-wrap md:justify-between">
         <div className='md:w-7/12'>
         <p className='font-pop font-normal text-sm mb-8 text-secondary'>All Teak Nurseries Limited supply high quality teak furniture for garden and outdoor use. We aim to bring customers the highest standard of furniture at genuinely competitive prices.</p>
         <h2 className='font-roboto font-normal text-2xl mb-2 text-secondary'>About the company</h2>
