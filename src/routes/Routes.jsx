@@ -12,6 +12,7 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 
 import GallaryForFurniture from '../pages/GallaryForFurniture';
+import GallaryForTree from '../pages/GallaryForTree';
 
 const Routes = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ const Routes = createBrowserRouter([
         {
           path: "/furniture-gallary",
           element: <GallaryForFurniture />,
+        },
+        {
+          path: "/tree-gallary",
+          element: <GallaryForTree />,
         },
         {
           path: "/about",

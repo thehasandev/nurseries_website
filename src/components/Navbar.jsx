@@ -56,7 +56,9 @@ function Navbar() {
                   <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Furniture Gallery</li>
                 </Link>
                 
+                <Link to="/tree-gallary">
                   <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Tree Gallery</li>
+                </Link>
                   <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Care & Maintenance</li>
                   
                   <Link to="/about">
@@ -107,7 +109,10 @@ function Navbar() {
            <Link to="/furniture-gallary">
             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Furniture Gallery</li>
            </Link>   
-            <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Tree Gallery</li>
+
+           <Link to="/tree-gallary">
+             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Tree Gallery</li>
+           </Link>
             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Care & Maintenance</li>
             
             <Link to="/about">
