@@ -98,84 +98,84 @@ function GallaryForTree() {
    
      </section>
 
-     <section className='my-[80px]'>
+     <section className='my-[80px] px-4 xl:px-0'>
       <Container>
        <h2 className='font-roboto font-normal text-3xl mb-2 text-secondary'>Gallery of Trees</h2>
       <p className='font-pop font-normal text-sm mb-4 text-secondary'>We offer a range of ornamental trees to compliment our fine teak furniture. Please contact us for more information on current stock available.</p>
       <Flex className=" flex-wrap gap-4 justify-center mt-8">
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree1} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree3} className="rounded-[5px]"/>
         </div>
         
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree1} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree3} className="rounded-[5px]"/>
         </div>
         
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree1} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree3} className="rounded-[5px]"/>
         </div>
         
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree1} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree3} className="rounded-[5px]"/>
         </div>
         
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree1} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
 
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree3} className="rounded-[5px]"/>
         </div>
         
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Tree2} className="rounded-[5px]"/>
         </div>
       </Flex>

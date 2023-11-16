@@ -96,44 +96,44 @@ function GallaryForFurniture() {
         </Slider>
    
      </section>
-     <section className='my-[80px]'>
+     <section className='my-[80px] px-4 xl:px-0'>
       <Container>
        <h2 className='font-roboto font-normal text-3xl mb-4 text-secondary'>Gallary of Take Furniture</h2>
       <Flex className=" flex-wrap gap-4 justify-center mt-8">
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture1} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture2} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture1} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture2} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture1} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture2} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture1} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture2} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture1} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture2} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture1} className="rounded-[5px]"/>
         </div>
-        <div className='w-[24%]'>
+        <div className='md:w-[24%]'>
           <Image src={Furniture2} className="rounded-[5px]"/>
         </div>
       </Flex>
