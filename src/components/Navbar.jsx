@@ -52,8 +52,10 @@ function Navbar() {
 
                   </div>
                   </li>
-                
+                <Link to="/furniture-gallary">
                   <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Furniture Gallery</li>
+                </Link>
+                
                   <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Tree Gallery</li>
                   <li className='font-pop font-normal text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Care & Maintenance</li>
                   
@@ -102,8 +104,9 @@ function Navbar() {
                   <li className='font-pop font-normal  text-sm text-secondary group hover:text-primary duration-300'>Teak Accessories</li>
                 </ul>
               }
-    
+           <Link to="/furniture-gallary">
             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Furniture Gallery</li>
+           </Link>   
             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Tree Gallery</li>
             <li className='font-pop font-normal mb-2 text-sm text-secondary hover:text-primary duration-300 cursor-pointer'>Care & Maintenance</li>
             

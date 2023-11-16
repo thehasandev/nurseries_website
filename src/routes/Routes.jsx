@@ -11,6 +11,8 @@ import TrmasAndCondition from '../pages/TrmasAndCondition';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 
+import GallaryForFurniture from '../pages/GallaryForFurniture';
+
 const Routes = createBrowserRouter([
     {
       path: "/",
@@ -35,6 +37,10 @@ const Routes = createBrowserRouter([
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/furniture-gallary",
+          element: <GallaryForFurniture />,
         },
         {
           path: "/about",
